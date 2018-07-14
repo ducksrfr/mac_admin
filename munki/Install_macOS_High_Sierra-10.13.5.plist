@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OnDemand</key>
+	<true/>
+	<key>RestartAction</key>
+	<string>RequireRestart</string>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>YourOrgUserNameHere</string>
+		<key>creation_date</key>
+		<date>2018-06-10T00:58:52Z</date>
+		<key>munki_version</key>
+		<string>3.3.0.3515</string>
+		<key>os_version</key>
+		<string>10.13.5</string>
+	</dict>
+	<key>additional_startosinstall_options</key>
+	<array>
+		<string>--eraseinstall</string>
+		<string>--agreetolicense</string>
+		<string>--nointeraction</string>
+		<string>--installpackage</string>
+		<string>/path/to/installer.pkg</string>
+		<string>--installpackage</string>
+		<string>/path/to/installer.pkg</string>
+		<string>--installpackage</string>
+		<string>/path/to/installer.pkg</string>
+		<string>--newvolumename</string>
+		<string>Macintosh HD</string>
+	</array>
+	<key>apple_item</key>
+	<true/>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+		<string>Deploy</string>
+	</array>
+	<key>category</key>
+	<string>YourOrgNameHere</string>
+	<key>description</key>
+	<string>************DO NOT DOWNLOAD************
+
+This app erases your Mac to the default configuration. DO NOT DOWNLOAD unless specifically instructed by the IT Helpdesk. Contact us at foo@example.org
+
+************DO NOT DOWNLOAD************</string>
+	<key>developer</key>
+	<string>Apple</string>
+	<key>display_name</key>
+	<string>Erase_BV_Mac_HighSierra</string>
+	<key>icon_name</key>
+	<string>Install_macOS_High_Sierra.png</string>
+	<key>installed_size</key>
+	<integer>14994636</integer>
+	<key>installer_item_hash</key>
+	<string>71767713403ca6925868abd922c31b0b66a126815b09fbe53827e8ce85b6b620</string>
+	<key>installer_item_location</key>
+	<string>apps/Install macOS High Sierra-10.13.5.dmg</string>
+	<key>installer_item_size</key>
+	<integer>5095253</integer>
+	<key>installer_type</key>
+	<string>startosinstall</string>
+	<key>minimum_munki_version</key>
+	<string>3.0.0.3211</string>
+	<key>minimum_os_version</key>
+	<string>10.13</string>
+	<key>name</key>
+	<string>Install_macOS_High_Sierra</string>
+	<key>unattended_install</key>
+	<false/>
+	<key>unattended_uninstall</key>
+	<false/>
+	<key>uninstallable</key>
+	<false/>
+	<key>version</key>
+	<string>10.13.5</string>
+</dict>
+</plist>
