@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadDisplayName</key>
+        <string>enable_firewall</string>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadDescription</key>
+        <string>Enables firewall</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>b80802ef-380b-5b0a-c1fa-a38a073cf73b</string>
+                <key>PayloadDisplayName</key>
+                <string>Security &amp; Privacy</string>
+                <key>BlockAllIncoming</key>
+                <false/>
+                <key>PayloadType</key>
+                <string>com.apple.security.firewall</string>
+                <key>Applications</key>
+                <array/>
+                <key>EnableStealthMode</key>
+                <false/>
+                <key>EnableFirewall</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.5fe81090-c898-0134-d318-2c87a33a6849.alacarte.privacy.8e463ca0-c898-0134-d319-2c87a33a6849.firewall</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+            </dict>
+        </array>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.5fe81090-c898-0134-d318-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadUUID</key>
+        <string>5fe81090-c898-0134-d318-2c87a33a6849</string>
+    </dict>
+</plist>

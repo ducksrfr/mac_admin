@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>com.microsoft.onenote.mac</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<key>SendASmileEnabled</key>
+								<false/>
+								<key>SendAllTelemetryEnabled</key>
+								<false/>
+								<key>kFREEnterpriseTelemetryInfoKey</key>
+								<true/>
+								<key>kSubUIAppCompletedFirstRunSetup1507</key>
+								<true/>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>Custom: (com.microsoft.onenote.mac)</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.mdm.macserver-imac.local.fa9d27a0-521e-0136-d475-2c87a33a6849.alacarte.customsettings.39672060-521f-0136-d476-2c87a33a6849</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>39672060-521f-0136-d476-2c87a33a6849</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Settings for Microsoft OneNote</string>
+	<key>PayloadDisplayName</key>
+	<string>Settings for mac_onenote</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>com.apple.mdm.macserver-imac.local.fa9d27a0-521e-0136-d475-2c87a33a6849.alacarte</string>
+	<key>PayloadOrganization</key>
+	<string>Bazaarvoice</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>fa9d27a0-521e-0136-d475-2c87a33a6849</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

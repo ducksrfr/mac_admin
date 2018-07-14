@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>AllowUserOverrides</key>
+                <true/>
+                <key>AllowedKernelExtensions</key>
+                <dict>
+                    <key>9PTGMPNXZ2</key>
+                    <array>
+                        <string>com.symantec.internetSecurity.kext</string>
+                        <string>com.symantec.nfm.kext</string>
+                        <string>com.symantec.ips.kext</string>
+                    </array>
+                </dict>
+                <key>AllowedTeamIdentifiers</key>
+                <array>
+                    <string>9PTGMPNXZ2</string>
+                </array>
+                <key>PayloadDisplayName</key>
+                <string>Kernel Extensions Policy</string>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.826ad490-1b08-0136-d451-2c87a33a6849.alacarte.kernel-extensions.77861360-1b0e-0136-d452-2c87a33a6849</string>
+                <key>PayloadType</key>
+                <string>com.apple.syspolicy.kernel-extension-policy</string>
+                <key>PayloadUUID</key>
+                <string>77861360-1b0e-0136-d452-2c87a33a6849</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Allows for the kernel extension approval of Symantec AntiVirus 14</string>
+        <key>PayloadDisplayName</key>
+        <string>Kernel Extension Approval_Symantec</string>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.826ad490-1b08-0136-d451-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>826ad490-1b08-0136-d451-2c87a33a6849</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>

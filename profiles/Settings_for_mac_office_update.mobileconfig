@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>com.microsoft.autoupdate2</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<key>ChannelName</key>
+								<string>Production</string>
+								<key>DisableInsiderCheckbox</key>
+								<true/>
+								<key>HowToCheck</key>
+								<string>AutomaticCheck</string>
+								<key>SendAllTelemetryEnabled</key>
+								<false/>
+								<key>UpdateCheckFrequency</key>
+								<integer>21600</integer>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>Custom: (com.microsoft.autoupdate2)</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.mdm.macserver-imac.local.cc110fa0-521a-0136-d471-2c87a33a6849.alacarte.customsettings.30870e70-521c-0136-d472-2c87a33a6849</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>30870e70-521c-0136-d472-2c87a33a6849</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Settings for the Microsoft AutoUpdate Utility</string>
+	<key>PayloadDisplayName</key>
+	<string>Settings for mac_office_update</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>com.apple.mdm.macserver-imac.local.cc110fa0-521a-0136-d471-2c87a33a6849.alacarte</string>
+	<key>PayloadOrganization</key>
+	<string>Bazaarvoice</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>cc110fa0-521a-0136-d471-2c87a33a6849</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

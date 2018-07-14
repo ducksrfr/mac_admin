@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadContent</key>
+                <dict>
+                    <key>com.apple.systemuiserver</key>
+                    <dict>
+                        <key>Forced</key>
+                        <array>
+                            <dict>
+                                <key>mcx_preference_settings</key>
+                                <dict>
+                                    <key>NSStatusItem Visible Siri</key>
+                                    <false/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.airplay</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.airport</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.appleuser</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.battery</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.bluetooth</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.clock</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.volume</key>
+                                    <true/>
+                                    <key>NSStatusItem Visible com.apple.menuextra.vpn</key>
+                                    <true/>
+                                    <key>__NSEnableTSMDocumentWindowLevel</key>
+                                    <true/>
+                                    <key>menuExtras</key>
+                                    <array>
+                                        <string>/System/Library/CoreServices/Menu Extras/Clock.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/Battery.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/AirPort.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/Volume.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/Bluetooth.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/Displays.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/User.menu</string>
+                                        <string>/System/Library/CoreServices/Menu Extras/VPN.menu</string>
+                                    </array>
+                                </dict>
+                            </dict>
+                        </array>
+                    </dict>
+                </dict>
+                <key>PayloadDisplayName</key>
+                <string>Custom: (com.apple.systemuiserver)</string>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.e619bbc0-3444-0136-d464-2c87a33a6849.alacarte.customsettings.04410560-3445-0136-d466-2c87a33a6849</string>
+                <key>PayloadType</key>
+                <string>com.apple.ManagedClient.preferences</string>
+                <key>PayloadUUID</key>
+                <string>04410560-3445-0136-d466-2c87a33a6849</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Add shortcuts to the menu bar</string>
+        <key>PayloadDisplayName</key>
+        <string>Settings for menubar_icons</string>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.e619bbc0-3444-0136-d464-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>e619bbc0-3444-0136-d464-2c87a33a6849</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>

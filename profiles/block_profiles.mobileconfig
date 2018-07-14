@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>DisabledPreferencePanes</key>
+                <array>
+                    <string>com.apple.preferences.configurationprofiles</string>
+                </array>
+                <key>PayloadDisplayName</key>
+                <string>System Preferences</string>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.75390fa0-31ea-0136-d462-2c87a33a6849.alacarte.macosxrestrictions.a35cc0e0-31ea-0136-d463-2c87a33a6849.systempreferences</string>
+                <key>PayloadType</key>
+                <string>com.apple.systempreferences</string>
+                <key>PayloadUUID</key>
+                <string>7181012c-4b16-0686-e75c-68f2a6b2461a</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Prevents users from clicking Profiles in System Preferences</string>
+        <key>PayloadDisplayName</key>
+        <string>Settings for block_Profiles</string>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.75390fa0-31ea-0136-d462-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>75390fa0-31ea-0136-d462-2c87a33a6849</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>

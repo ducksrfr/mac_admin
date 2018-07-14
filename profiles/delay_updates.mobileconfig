@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadDisplayName</key>
+                <string>Restrictions</string>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.de520870-1b1a-0136-d453-2c87a33a6849.alacarte.macosxrestrictions.a5a54cb0-1b1b-0136-d454-2c87a33a6849.applicationaccess</string>
+                <key>PayloadType</key>
+                <string>com.apple.applicationaccess</string>
+                <key>PayloadUUID</key>
+                <string>2b79be49-73ff-1e81-1319-ef51bd09099a</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>enforcedSoftwareUpdateDelay</key>
+                <integer>30</integer>
+                <key>forceDelayedSoftwareUpdates</key>
+                <true/>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Defers Apple software updates for 30 days. This restriction does not apply to security or other critical patches.</string>
+        <key>PayloadDisplayName</key>
+        <string>Delay_Updates</string>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.de520870-1b1a-0136-d453-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>de520870-1b1a-0136-d453-2c87a33a6849</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>

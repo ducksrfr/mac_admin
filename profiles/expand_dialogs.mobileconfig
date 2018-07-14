@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadDisplayName</key>
+        <string>Expand_save_dialogs</string>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadDescription</key>
+        <string>Always shows expanded save and print dialog windows.</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>PayloadDisplayName</key>
+                <string>Custom: (.GlobalPreferences)</string>
+                <key>PayloadType</key>
+                <string>com.apple.ManagedClient.preferences</string>
+                <key>PayloadContent</key>
+                <dict>
+                    <key>.GlobalPreferences</key>
+                    <dict>
+                        <key>Forced</key>
+                        <array>
+                            <dict>
+                                <key>mcx_preference_settings</key>
+                                <dict>
+                                    <key>NSNavPanelExpandedStateForSaveMode</key>
+                                    <true/>
+                                    <key>NSNavPanelExpandedStateForSaveMode2</key>
+                                    <true/>
+                                    <key>PMPrintingExpandedStateForPrint2</key>
+                                    <true/>
+                                    <key>PMPrintingExpandedStateForPrint</key>
+                                    <true/>
+                                </dict>
+                            </dict>
+                        </array>
+                    </dict>
+                </dict>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.ef2f74b0-64d0-0135-d361-2c87a33a6849.alacarte.customsettings.29c2fe30-64d1-0135-d363-2c87a33a6849</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadUUID</key>
+                <string>29c2fe30-64d1-0135-d363-2c87a33a6849</string>
+            </dict>
+        </array>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.ef2f74b0-64d0-0135-d361-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadUUID</key>
+        <string>ef2f74b0-64d0-0135-d361-2c87a33a6849</string>
+    </dict>
+</plist>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadDisplayName</key>
+        <string>Disable Change Password</string>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadDescription</key>
+        <string>Prevents user from clicking Change Password button in favor of NoMAD.</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>bcf0da85-cf73-a6e7-646e-96b1748ec929</string>
+                <key>PayloadDisplayName</key>
+                <string>Security &amp; Privacy</string>
+                <key>PayloadType</key>
+                <string>com.apple.loginwindow</string>
+                <key>ChangePasswordDisabled</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.mdm.macserver-imac.local.5fe81090-c898-0134-d318-2c87a33a6849.alacarte.privacy.8e463ca0-c898-0134-d319-2c87a33a6849.loginwindow</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+            </dict>
+        </array>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.mdm.macserver-imac.local.5fe81090-c898-0134-d318-2c87a33a6849.alacarte</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadUUID</key>
+        <string>5fe81090-c898-0134-d318-2c87a33a6849</string>
+    </dict>
+</plist>
