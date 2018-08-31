@@ -1,18 +1,14 @@
 # mac_admin
 Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra. You may freely use or modify anything I upload, but please check out the MIT license.
 
-__This page will be updated and maintained on a regular basis with additional profiles and scripts.__
-
-__Coming soon: Download link for the macOS 10.13.3 installer__
-
-## Pkgs
+### Pkgs
 
 * skipprivacy_signed.pkg
   * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
   * Skips the Data & Privacy screen introduced in 10.13.4
   * Pkg has a Product ID and is signed
 
-## Scripts
+### Scripts
 
 The scripts folder contains helpful scripts compatible with macOS High Sierra.
 
@@ -27,8 +23,11 @@ The scripts folder contains helpful scripts compatible with macOS High Sierra.
     * You have a DEP-enrolled Mac, and your MDM service supports user creation during MDM PreStage enrollment __(the only truly automated option)__
     * In the GUI, either in macOS Setup Assistant or System Preferences
     * Using `sysadminctl` with the `interactive` argument
+  * You can run `sysadminctl -adminUser AdminUserHere -adminPassword AdminPasswordHere -addUser NewUserNameHere -fullname "New User Name Here" -password NewUserPasswordHere -admin` and incorporate into a pkg (or run as root) however the new user account will not receive a secureToken.
 
-* admin_pwreset: Change an unknown admin password in macOS High Sierra
+* admin_pwreset: Reset a user account password in High Sierra
+  * `sysadminctl -resetPasswordFor` will always create a new Keychain
+  * You don't necessarily need to know the existing user password (that you want to reset), so long as another admin user exists to to authenticate.
 
 * outlook_timezone: If a user is unable to resolve time zone mismatch errors in Microsoft Outlook 2016. I incorporate this script into a pkg to run as `root`. You may have to add `sudo` in your environment.
 
@@ -42,7 +41,7 @@ The scripts folder contains helpful scripts compatible with macOS High Sierra.
     * `--installpackage` (can be used multiple times, but keep the total number of pkgs and file sizes to a minimum)
     * `--newvolumename`
 
-## Munki_pkgsinfo
+### Munki_pkgsinfo
 
 I use Munki to deploy apps and custom pkgs at my organization. Munki supports `startosinstall` to re-image already-deployed Macs.
 
@@ -54,7 +53,7 @@ I use Munki to deploy apps and custom pkgs at my organization. Munki supports `s
   * `--installpackage` (can be used multiple times, but keep the total number of pkgs and file sizes to a minimum)
   * `--newvolumename`
 
-## Profiles
+### Profiles
 
 The profiles folder contains helpful mobileconfig files for use with your MDM service. The `PayloadRemovalDisallowed` key may be set to `-bool` value `true` or `false` depending on the profile. Please adjust the profile removal restrictions as needed when uploading to your MDM service.
 
@@ -105,7 +104,7 @@ The profiles folder contains helpful mobileconfig files for use with your MDM se
    * Battery icon with percentage
    * Bluetooth __(macOS hides this by default)__
    * Clock
-   * Volume __(macOS hides this by default)__
-   * VPN __(macOS hides this by default)__
+   * Volume __(hidden by default)__
+   * VPN __(hidden by default)__
 
 * enable_firewall: enforces the firewall, installed apps are able to receive incoming connections
