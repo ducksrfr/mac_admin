@@ -10,6 +10,7 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
   * `SystemPolicySysAdminFiles`
   * `AppleEvents`
   * `Accessibility`
+* You cannot pre-approve Location Services, Microphone, or Camera access.
 
 ### Pkgs
 
