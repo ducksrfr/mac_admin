@@ -1,5 +1,15 @@
-# mac_admin
-Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra. You may freely use or modify anything I upload, but please check out the MIT license.
+# mac_admin -- updated with new PPPC/TCC profiles compatible with macOS Mojave 10.14
+Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra and Mojave. You may freely use or modify anything I upload, but please check out the MIT license.
+
+### Mojave: Privacy Preferences Policy Control (TCC) profiles
+
+* In macOS Mojave a user might encounter new privacy permission pop-ups when they launch apps like Microsoft Office, VirtualBox, or even Terminal. I built one giant profile at my org, however I have split that into multiple profiles based on the app so that you can upload to your MDM server, or copy and paste what you need.
+* You can find more information about the PPPC profiles from Apple <https://help.apple.com/deployment/mdm/#/mdm38df53c2a> 
+* My profiles tend to focus on granting access to:
+  * `SystemPolicyAllFiles`
+  * `SystemPolicySysAdminFiles`
+  * `AppleEvents`
+  * `Accessibility`
 
 ### Pkgs
 
