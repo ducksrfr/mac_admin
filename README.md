@@ -6,10 +6,9 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 * In macOS Mojave a user might encounter new privacy permission pop-ups when they launch apps like Microsoft Office, VirtualBox, or even Terminal. I built one giant profile at my org, however I have split that into multiple profiles based on the app so that you can upload to your MDM server, or copy and paste what you need.
 * You can find more information about the PPPC profiles from Apple <https://help.apple.com/deployment/mdm/#/mdm38df53c2a> 
 * My profiles tend to focus on granting access to:
-  * `SystemPolicyAllFiles`
-  * `SystemPolicySysAdminFiles`
-  * `AppleEvents`
-  * `Accessibility`
+  * `SystemPolicyAllFiles` Terminal, iTerm, or Sophos Anti-Virus
+  * `AppleEvents` example: Microsoft AutoUpdate, Skype for Business, or VirtualBox
+  * `Accessibility` example: Parallels Desktop, VirtualBox, or TeamViewer QuickSupport
 * You cannot pre-approve Location Services, Microphone, or Camera access.
 
 ### Pkgs
