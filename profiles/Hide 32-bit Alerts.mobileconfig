@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>CSUIDisable32BitWarning</key>
+                <true/>
+                <key>PayloadDescription</key>
+                <string>Configures Global Preferences settings</string>
+                <key>PayloadDisplayName</key>
+                <string>Global Preferences</string>
+                <key>PayloadIdentifier</key>
+                <string>com.github.erikberglund.ProfileCreator.A12E9050-6380-4ED4-8A6B-7C30FA1FFFDE.com.apple.GlobalPreferences.1B82DB91-C4B7-4AF8-9685-C8C920248F84</string>
+                <key>PayloadOrganization</key>
+                <string>Silicon Labs</string>
+                <key>PayloadType</key>
+                <string>.GlobalPreferences</string>
+                <key>PayloadUUID</key>
+                <string>1B82DB91-C4B7-4AF8-9685-C8C920248F84</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Suppress the 32-bit software compatiblity warnings</string>
+        <key>PayloadDisplayName</key>
+        <string>Hide 32-bit Alerts</string>
+        <key>PayloadIdentifier</key>
+        <string>com.github.erikberglund.ProfileCreator.A12E9050-6380-4ED4-8A6B-7C30FA1FFFDE</string>
+        <key>PayloadOrganization</key>
+        <string>Silicon Labs</string>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>A12E9050-6380-4ED4-8A6B-7C30FA1FFFDE</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>
