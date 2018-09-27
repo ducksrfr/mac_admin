@@ -13,6 +13,10 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 
 ### Pkgs
 
+* skip_ChooseYourLook_signed.pkg
+  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
+  * Skips the Choose Your Look screen introduced in 10.14
+  * Pkg has a Product ID and is signed
 * skipprivacy_signed.pkg
   * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
   * Skips the Data & Privacy screen introduced in 10.13.4
@@ -66,6 +70,14 @@ I use Munki to deploy apps and custom pkgs at my organization. Munki supports `s
 ### Profiles
 
 The profiles folder contains helpful mobileconfig files for use with your MDM service. The `PayloadRemovalDisallowed` key may be set to `-bool` value `true` or `false` depending on the profile. Please adjust the profile removal restrictions as needed when uploading to your MDM service.
+
+* Hide 32-bit Alerts: suppresses the 32-bit compatibility warnings for legacy software in High Sierra and Mojave
+
+* Suppress secureToken Window: suppresses the secureToken activation window that appears when an Active Directory-bound account signs into the Mac for the first time. Helpful for loaner Macs or computer lab environments
+
+* Skip Choose Your Look: skips the Setup Assistant screen for choosing between Light and Dark mode in Mojave
+
+* Skip Privacy Warning: skips the Setup Assistant screen for Data & Privacy in High Sierra and Mojave
 
 * block_macosbeta: Prevents users from installing macOS beta releases
 
