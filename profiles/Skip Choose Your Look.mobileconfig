@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadDescription</key>
+                <string>Configures Setup Assistant settings</string>
+                <key>PayloadDisplayName</key>
+                <string>Setup Assistant</string>
+                <key>PayloadIdentifier</key>
+                <string>com.github.erikberglund.ProfileCreator.78D10124-5558-4E5E-911D-127597C7B2C0.com.apple.SetupAssistant.managed.4D58AF6F-0852-4388-A02C-C1611F8E88C9</string>
+                <key>PayloadOrganization</key>
+                <string>Silicon Labs</string>
+                <key>PayloadType</key>
+                <string>com.apple.SetupAssistant.managed</string>
+                <key>PayloadUUID</key>
+                <string>4D58AF6F-0852-4388-A02C-C1611F8E88C9</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>SkipAppearance</key>
+                <true/>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Suppress the Choose Your Look SetupAssistant screen.</string>
+        <key>PayloadDisplayName</key>
+        <string>Skip Choose Your Look</string>
+        <key>PayloadIdentifier</key>
+        <string>com.github.erikberglund.ProfileCreator.78D10124-5558-4E5E-911D-127597C7B2C0</string>
+        <key>PayloadOrganization</key>
+        <string>Silicon Labs</string>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>78D10124-5558-4E5E-911D-127597C7B2C0</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>
