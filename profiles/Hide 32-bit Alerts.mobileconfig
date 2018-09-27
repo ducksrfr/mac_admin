@@ -6,7 +6,7 @@
         <key>PayloadContent</key>
         <array>
             <dict>
-                <key>CSUIDisable32BitWarning</key>
+                <key>CSUIDisable32BitWarnings</key>
                 <true/>
                 <key>PayloadDescription</key>
                 <string>Configures Global Preferences settings</string>
