@@ -24,7 +24,7 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 
 ### Scripts
 
-The scripts folder contains helpful scripts compatible with macOS High Sierra.
+The scripts folder contains helpful scripts compatible with macOS Mojave and High Sierra.
 
 * resetTCC_mic_camera
   * Resets the camera and microphone properties in the TCC database
