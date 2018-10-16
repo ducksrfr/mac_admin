@@ -26,6 +26,10 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 
 The scripts folder contains helpful scripts compatible with macOS High Sierra.
 
+* resetTCC_mic_camera
+  * Resets the camera and microphone properties in the TCC database
+  * Useful if an end user unintentionally denies access to the camera or microphone in a chat app like Skype, Slack, WebEx, or Lifesize.
+
 * create_admin_user: use `sysadminctl` to create an admin account that is granted a secureToken. 
   * The script assumes the current logged in user is an admin with `secureToken` (like a chain-of-trust system)
   * It uses the password passthrough option `-` to avoid plaintext passwords in the script.
