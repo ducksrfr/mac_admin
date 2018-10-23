@@ -8,7 +8,7 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 * My profiles tend to focus on granting access to:
   * `SystemPolicyAllFiles` example: Terminal, iTerm, or Sophos Anti-Virus
   * `AppleEvents` example: Microsoft AutoUpdate, Skype for Business, or VirtualBox
-  * `Accessibility` example: Parallels Desktop, VirtualBox, or TeamViewer QuickSupport
+  * `Accessibility` example: Citrix Receiver/Workspace, Parallels Desktop, VirtualBox, or TeamViewer QuickSupport
 * You cannot pre-approve Location Services, Microphone, or Camera access.
 
 ### Pkgs
