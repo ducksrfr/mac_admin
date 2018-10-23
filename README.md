@@ -7,7 +7,7 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 * You can find more information about the PPPC profiles from Apple <https://help.apple.com/deployment/mdm/#/mdm38df53c2a> 
 * My profiles tend to focus on granting access to:
   * `SystemPolicyAllFiles` example: Terminal, iTerm, or Sophos Anti-Virus
-  * `AppleEvents` example: Microsoft AutoUpdate, Skype for Business, or VirtualBox
+  * `AppleEvents` example: Dropbox, Microsoft AutoUpdate, Skype for Business, or VirtualBox
   * `Accessibility` example: Citrix Receiver/Workspace, Parallels Desktop, VirtualBox, or TeamViewer QuickSupport
 * You cannot pre-approve Location Services, Microphone, or Camera access.
 
