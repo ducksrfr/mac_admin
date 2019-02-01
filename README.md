@@ -1,4 +1,4 @@
-# **New** FileVault Password Mismatch Fix for Mojave
+# ** New ** FileVault Password Mismatch Fix for Mojave
 Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra and Mojave. You may freely use or modify anything I upload, but please check out the MIT license.
 
 ### Resolve an out-of-sync FileVault password with mobile AD user accounts
@@ -38,7 +38,7 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
   * Resets the camera and microphone properties in the TCC database
   * Useful if an end user unintentionally denies access to the camera or microphone in a chat app like Skype, Slack, WebEx, or Lifesize.
 
-* **New** create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
+* ** New ** create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
 
 * admin_pwreset: Reset a user account password in High Sierra
   * `sysadminctl -resetPasswordFor` will always create a new Keychain
