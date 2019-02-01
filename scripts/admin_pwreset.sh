@@ -2,4 +2,9 @@
 
 # The resetPasswordFor option will always create a new Keychain for the user
 
-sysadminctl -adminUser AdminUserHere -adminPassword AdminPasswordHere -resetPasswordFor UserToBeReset -newPassword NewPasswordForUser
+adminUser=""
+adminPassword=""
+resetUser=""
+newPass=""
+
+sysadminctl -adminUser $adminUser -adminPassword $adminPassword -resetPasswordFor $resetUser -newPassword $newPass
