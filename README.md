@@ -98,17 +98,6 @@ The profiles folder contains helpful mobileconfig files for use with your MDM se
 
 * enable_firewall: enforces the firewall, installed apps are able to receive incoming connections
 
-### Pkgs
-
-* skip_ChooseYourLook_signed.pkg
-  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
-  * Skips the Choose Your Look screen introduced in 10.14
-  * Pkg has a Product ID and is signed
-* skipprivacy_signed.pkg
-  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
-  * Skips the Data & Privacy screen introduced in 10.13.4
-  * Pkg has a Product ID and is signed
-
 ### Munki_pkgsinfo
 
 I use Munki to deploy apps and custom pkgs at my organization. Munki supports `startosinstall` to re-image already-deployed Macs.
