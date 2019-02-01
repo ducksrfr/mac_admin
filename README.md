@@ -1,12 +1,12 @@
 # **New** FileVault Password Mismatch Fix for Mojave
 Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra and Mojave. You may freely use or modify anything I upload, but please check out the MIT license.
 
-### Mojave script: Resolve an out-of-sync FileVault password with mobile AD user accounts
+### Resolve an out-of-sync FileVault password with mobile AD user accounts
 * There is a major bug in Mojave with AD-bound mobile user accounts. If a user's password is reset off of the Mac (like in Active Directory, Okta, or an AD-bound Windows PC) the FileVault password is never updated to reflect the password change.
 * Users may report that their Keychain or account password at the login screen alternates between the old and new/current network password based on whether they are connected to the corporate network.
 * A simple restart does not resolve the mismatched FileVault password
-* This script revokes and reissues a Secure Token, then updates the FileVault preboot volume
-* I use a LAPS script in a Jamf extended attribute at my org, so this script pulls that password value for use with `sysadminctl`
+* `Mojave_FileVault_Sync.sh` in the scripts folder revokes and reissues a Secure Token, then updates the FileVault preboot volume
+* I use a LAPS script in a Jamf extended attribute at my org, so this script also pulls that password value for use with `sysadminctl`
 * Members of the MacAdmins Slack report that Apple has acknowledged the issue, however a resolution will not be released until macOS 10.15 (at the earliest).
 
 ### Mojave: Privacy Preferences Policy Control (TCC) profiles
@@ -38,7 +38,7 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
   * Resets the camera and microphone properties in the TCC database
   * Useful if an end user unintentionally denies access to the camera or microphone in a chat app like Skype, Slack, WebEx, or Lifesize.
 
-* create_admin_user: use `sysadminctl` to create an admin account that is granted a secureToken. 
+* **New** create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
 
 * admin_pwreset: Reset a user account password in High Sierra
   * `sysadminctl -resetPasswordFor` will always create a new Keychain
