@@ -1,14 +1,22 @@
-# **New** PPPC/TCC profiles compatible with macOS Mojave 10.14
+# **New** FileVault Password Mismatch Fix for Mojave
 Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra and Mojave. You may freely use or modify anything I upload, but please check out the MIT license.
+
+### Mojave script: Resolve an out-of-sync FileVault password with mobile AD user accounts
+* There is a major bug in Mojave with AD-bound mobile user accounts. If a user's password is reset off of the Mac (like in Active Directory, Okta, or an AD-bound Windows PC) the FileVault password is never updated to reflect the password change.
+* Users may report that their Keychain or account password at the login screen alternates between the old and new/current network password based on whether they are connected to the corporate network.
+* A simple restart does not resolve the mismatched FileVault password
+* This script revokes and reissues a Secure Token, then updates the FileVault preboot volume
+* I use a LAPS script in a Jamf extended attribute at my org, so this script pulls that password value for use with `sysadminctl`
+* Members of the MacAdmins Slack report that Apple has acknowledged the issue, however a resolution will not be released until macOS 10.15 (at the earliest).
 
 ### Mojave: Privacy Preferences Policy Control (TCC) profiles
 
-* In macOS Mojave a user might encounter new privacy permission pop-ups when they launch apps like Microsoft Office, VirtualBox, or even Terminal. I built one giant profile at my org, however I have split that into multiple profiles based on the app so that you can upload to your MDM server, or copy and paste what you need.
+* In macOS Mojave a user might encounter new privacy permission pop-ups when they launch apps like Microsoft Office, Parallels, Citrix, or TeamViewer. 
 * You can find more information about the PPPC profiles from Apple <https://help.apple.com/deployment/mdm/#/mdm38df53c2a> 
 * My profiles tend to focus on granting access to:
-  * `SystemPolicyAllFiles` example: Terminal, iTerm, or Sophos Anti-Virus
-  * `AppleEvents` example: Dropbox, Microsoft AutoUpdate, Skype for Business, or VirtualBox
-  * `Accessibility` example: Citrix Receiver/Workspace, Parallels Desktop, VirtualBox, or TeamViewer QuickSupport
+  * `SystemPolicyAllFiles`
+  * `AppleEvents`
+  * `Accessibility`
 * You cannot pre-approve Location Services, Microphone, or Camera access.
 
 ### Pkgs
@@ -31,17 +39,6 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
   * Useful if an end user unintentionally denies access to the camera or microphone in a chat app like Skype, Slack, WebEx, or Lifesize.
 
 * create_admin_user: use `sysadminctl` to create an admin account that is granted a secureToken. 
-  * The script assumes the current logged in user is an admin with `secureToken` (like a chain-of-trust system)
-  * It uses the password passthrough option `-` to avoid plaintext passwords in the script.
-  * __You cannot automate this script by incorporating into a .pkg and have it run as `root`__ There must be physical user interaction by the admin via the GUI or CLI for High Sierra to grant `secureToken`. The `root` user does not have `secureToken` therefore it cannot issue that attribute to a new user account.
-  * I create a pkg that pre-stages the script `/path/to/script.command`
-  * Use a simple LoginHook with your MDM provider, or incorporate into NoMAD using the `SignInCommand` key in a configuration profile
-  * Example: `open /path/to/script.command`
-  * macOS grants `secureToken` under these scenarios:
-    * You have a DEP-enrolled Mac, and your MDM service supports user creation during MDM PreStage enrollment __(the only truly automated option)__
-    * In the GUI, either in macOS Setup Assistant or System Preferences
-    * Using `sysadminctl` with the `interactive` argument
-  * You can run `sysadminctl -adminUser AdminUserHere -adminPassword AdminPasswordHere -addUser NewUserNameHere -fullname "New User Name Here" -password NewUserPasswordHere -admin` and incorporate into a pkg (or run as root) however the new user account will not receive a secureToken.
 
 * admin_pwreset: Reset a user account password in High Sierra
   * `sysadminctl -resetPasswordFor` will always create a new Keychain
