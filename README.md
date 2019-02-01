@@ -19,17 +19,6 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
   * `Accessibility`
 * You cannot pre-approve Location Services, Microphone, or Camera access.
 
-### Pkgs
-
-* skip_ChooseYourLook_signed.pkg
-  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
-  * Skips the Choose Your Look screen introduced in 10.14
-  * Pkg has a Product ID and is signed
-* skipprivacy_signed.pkg
-  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
-  * Skips the Data & Privacy screen introduced in 10.13.4
-  * Pkg has a Product ID and is signed
-
 ### Scripts
 
 The scripts folder contains helpful scripts compatible with macOS Mojave and High Sierra.
@@ -54,18 +43,6 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
     * `--nointeraction`
     * `--installpackage` (can be used multiple times, but keep the total number of pkgs and file sizes to a minimum)
     * `--newvolumename`
-
-### Munki_pkgsinfo
-
-I use Munki to deploy apps and custom pkgs at my organization. Munki supports `startosinstall` to re-image already-deployed Macs.
-
-* An admin (or the user) visits Managed Software Center and downloads the macOS installer as an `OnDemand` `optional_install`
-* Munki supports the `startosinstall` command, I add additional flags like...
-  * `--eraseinstall`
-  * `--agreetolicense`
-  * `--nointeraction`
-  * `--installpackage` (can be used multiple times, but keep the total number of pkgs and file sizes to a minimum)
-  * `--newvolumename`
 
 ### Profiles
 
@@ -130,3 +107,26 @@ The profiles folder contains helpful mobileconfig files for use with your MDM se
    * VPN __(hidden by default)__
 
 * enable_firewall: enforces the firewall, installed apps are able to receive incoming connections
+
+### Pkgs
+
+* skip_ChooseYourLook_signed.pkg
+  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
+  * Skips the Choose Your Look screen introduced in 10.14
+  * Pkg has a Product ID and is signed
+* skipprivacy_signed.pkg
+  * Add this pkg to your existing imaging workflow (MDM solution/Munki/NetInstall/AutoDMG)
+  * Skips the Data & Privacy screen introduced in 10.13.4
+  * Pkg has a Product ID and is signed
+
+### Munki_pkgsinfo
+
+I use Munki to deploy apps and custom pkgs at my organization. Munki supports `startosinstall` to re-image already-deployed Macs.
+
+* An admin (or the user) visits Managed Software Center and downloads the macOS installer as an `OnDemand` `optional_install`
+* Munki supports the `startosinstall` command, I add additional flags like...
+  * `--eraseinstall`
+  * `--agreetolicense`
+  * `--nointeraction`
+  * `--installpackage` (can be used multiple times, but keep the total number of pkgs and file sizes to a minimum)
+  * `--newvolumename`
