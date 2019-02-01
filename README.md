@@ -38,11 +38,10 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
   * Resets the camera and microphone properties in the TCC database
   * Useful if an end user unintentionally denies access to the camera or microphone in a chat app like Skype, Slack, WebEx, or Lifesize.
 
-* ** New ** create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
+* **Updated** create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
 
-* admin_pwreset: Reset a user account password in High Sierra
-  * `sysadminctl -resetPasswordFor` will always create a new Keychain
-  * You don't necessarily need to know the existing user password (that you want to reset), so long as another admin user exists to to authenticate.
+* **Updated** admin_pwreset: Reset a user account password in High Sierra
+  * updated script with interactive `osascript` prompts to reset a user password using `sysadminctl`
 
 * outlook_timezone: If a user is unable to resolve time zone mismatch errors in Microsoft Outlook 2016. I incorporate this script into a pkg to run as `root`. You may have to add `sudo` in your environment.
 
