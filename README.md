@@ -32,17 +32,7 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
 * **Updated** admin_pwreset: Reset a user account password in High Sierra
   * updated script with interactive `osascript` prompts to reset a user password using `sysadminctl`
 
-* outlook_timezone: If a user is unable to resolve time zone mismatch errors in Microsoft Outlook 2016. I incorporate this script into a pkg to run as `root`. You may have to add `sudo` in your environment.
-
-* startosinstall_usbdisk: Place a macOS 10.13.4 (or later) installer on an external USB disk and run this command to begin an erase & install of macOS. 
-  * If you have any additional pkgs, add them in the same directory. 
-  * Target must be running 10.13 (or later)
-  * Not a bootable installer. Apple needs to update `createinstallmedia` to support additional flags, like:
-    * `--eraseinstall`
-    * `--agreetolicense`
-    * `--nointeraction`
-    * `--installpackage` (can be used multiple times, but keep the total number of pkgs and file sizes to a minimum)
-    * `--newvolumename`
+* outlook_timezone: If a user is unable to resolve time zone mismatch errors in Microsoft Outlook.
 
 ### Profiles
 
