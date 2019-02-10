@@ -8,9 +8,7 @@
 # The extended attribute gets updated based on your inventory collection frequency.
 # Add this script as a recurring check-in policy that executes once per day
 # If you don't use Jamf you can incorporate their script into this one to pull the password age value.
-# A user is simply presented with the option to open the Users & Groups preference pane to change their password. I purposely do not use dscl to change the password, as that can cause issues with secureToken in macOS 10.13+
-# Using sysadminctl to reset a password will always creates a new Keychain, and we'd like to avoid that.
-
+# A user is simply presented with the option to open the Users & Groups preference pane to change their password. I purposely do not use dscl to change the password, as that can cause issues with secureToken in macOS High Sierra and Mojave.
 
 currentUser=$(scutil <<< "show State:/Users/ConsoleUser" | awk -F': ' '/[[:space:]]+Name[[:space:]]:/ { if ( $2 != "loginwindow" ) { print $2 }}')
 getUID=$(id -u $currentUser)
