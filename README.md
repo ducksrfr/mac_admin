@@ -25,8 +25,8 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
 
 * **New** Local_pw_expiration
    * If your organization is using a configuration profile to enforce a local password expiration policy, then a user doesn't receive any notification that their password is nearing expiration.
-   * This script pulls the value from a Jamf extended attribute (which contains the password age) and based on that value presents a "change password" warning dialogue to the user.
-   * If you're not using Jamf, you can modify the script to pull the password age value locally.
+   * This script pulls the value from a [Jamf extended attribute](https://github.com/jamf/Current-User-Password-Age) (which contains the password age) and based on that value presents a "change password" warning dialogue to the user.
+   * If you're not using Jamf, you can modify the script to pull the password age locally.
    * If the user decides to reset their password, the Users & Groups pref pane will launch to allow the user to change their password.
 
 * resetTCC_mic_camera
