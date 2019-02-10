@@ -29,6 +29,7 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
    * If you're not using Jamf, you can modify the script to pull the password age locally.
    * If the user decides to reset their password, the Users & Groups pref pane will launch to allow the user to change their password.
    * This script purposely does not use `dscl` to change the password, because that causes isses with secureToken in macOS High Sierra and Mojave
+   * I'm currently testing a revised version with `sysadminctl` that will respect your org's new password complexity policy 
 
 * resetTCC_mic_camera
   * Resets the camera and microphone properties in the TCC database
