@@ -36,7 +36,6 @@ elif [ $passwordAge == 60 ];then
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password expires in 30 days!
 	
 	" with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:UserIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Maybe Later", "Change Password"} cancel button 1 default button 2' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0
 elif [ '$passwordAge -ge 61 -a $passwordAge -le 78' ];then
 	echo "The password for $currentUser is outside the warning period."
 	exit 1
@@ -45,35 +44,34 @@ elif [ $passwordAge -ge 79 -a $passwordAge -le 85 ];then
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password expires soon!
 	
 	" with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:UserIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Maybe Later", "Change Password"} cancel button 1 default button 2' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0
 elif [ $passwordAge == 86 ];then
 	echo "The password for $currentUser expires in 3 days!"
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password expires in 3 days!
 	
 	Avoid account lockout issues by changing your password now." with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertCautionIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Maybe Later", "Change Password"} cancel button 1 default button 2' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0
 elif [ $passwordAge == 87 ];then
 	echo "The password for $currentUser expires in 2 days!"
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password expires in 2 days!
 	
 	Avoid account lockout issues by changing your password now." with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertCautionIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Maybe Later", "Change Password"} cancel button 1 default button 2' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0
 elif [ $passwordAge == 88 ];then
 	echo "The password for $currentUser expires in 1 day!"	
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password expires tomorrow!
 	
 	Avoid account lockout issues by changing your password now." with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertCautionIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Maybe Later", "Change Password"} cancel button 1 default button 2' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0
 elif [ $passwordAge == 89 ];then
 	echo "The password for $currentUser expires today!"	
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password expires today!
 	
 	You must change your password at this time." with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertStopIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Change Password"} default button 1' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0
 elif [ $passwordAge -ge 90 ];then
 	echo "The password for $currentUser has expired!"	
 	/usr/bin/osascript -e 'Tell current application to display dialog "Your password has expired!
 	
 	You must reset your password now to unlock your account." with icon "Macintosh HD:System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertStopIcon.icns" as alias with title "Password Expiration Warning" with text buttons {"Change Password"} default button 1' -e 'tell application "Finder" to open POSIX file "/System/Library/PreferencePanes/Accounts.prefPane"'
-	exit 0	
 fi
+
+# allow user time to change password before updating inventory to reflect new password age
+sleep 60
+/usr/local/jamf/bin/jamf recon
+exit 0
