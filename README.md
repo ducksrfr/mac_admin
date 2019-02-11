@@ -4,7 +4,6 @@ Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts a
 ### Resolve an out-of-sync FileVault password with mobile AD user accounts
 * There is a major bug in Mojave with AD-bound mobile user accounts. If a user's password is reset off of the Mac (like in Active Directory, Okta, or an AD-bound Windows PC) the FileVault password is never updated to reflect the password change.
 * Users may report that their Keychain or account password at the login screen alternates between the old and new/current network password based on whether they are connected to the corporate network.
-* A simple restart does not resolve the mismatched FileVault password
 * `Mojave_FileVault_Sync.sh` in the scripts folder revokes and reissues a Secure Token, then updates the FileVault preboot volume
 * I use a [LAPS script](https://github.com/ducksrfr/LAPSforMac) in a Jamf extended attribute at my org, so this script also pulls that password value for use with `sysadminctl`
 * Members of the MacAdmins Slack report that Apple has acknowledged the issue, however a resolution date is unknown. The issue is still present as of 10.14.3.
@@ -28,7 +27,7 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
    * This script pulls the value from a [Jamf extended attribute](https://github.com/jamf/Current-User-Password-Age) (which contains the password age) and based on that value presents a "change password" warning dialogue to the user.
    * If you're not using Jamf, you can modify the script to pull the password age locally. Find the value in epoch time: `/usr/bin/dscl . -read /Users/$localUser accountPolicyData | /usr/bin/awk -F'<real>|</real>' '{print $2}' | tail -4`
    * If the user decides to reset their password, the Users & Groups pref pane will launch to allow the user to change their password.
-   * This script purposely does not use `dscl` to change the password, because that causes isses with secureToken in macOS High Sierra and Mojave
+   * This script avoids `dscl` to change the password, because that causes isses with secureToken in macOS High Sierra and Mojave
    * I'm currently testing a revised version with `sysadminctl` that will respect your org's new password complexity policy 
 
 * resetTCC_mic_camera
