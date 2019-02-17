@@ -24,7 +24,6 @@ fi
 apiUser=""
 apiPass=""
 apiURL=""
-xmlString="<?xml version=\"1.0\" encoding=\"UTF-8\"?><computer><extension_attributes><extension_attribute><name>Password Age</name><value>$passwordAge</value></extension_attribute></extension_attributes></computer>"
 udid=$(/usr/sbin/system_profiler SPHardwareDataType | /usr/bin/awk '/Hardware UUID:/ { print $3 }')
 extAttName="\"Password Age\""
 passwordAge="$(/usr/bin/curl -s -f -u $apiUser:$apiPass -H "Accept: application/xml" $apiURL/JSSResource/computers/udid/$udid/subset/extension_attributes | xpath "//extension_attribute[name=$extAttName]" 2>&1 | awk -F'<value>|</value>' '{print $2}')"
