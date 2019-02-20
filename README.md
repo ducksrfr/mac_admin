@@ -1,4 +1,3 @@
-# ** New ** FileVault Password Mismatch Fix for Mojave
 Hi! I'm a Mac admin based in Austin, TX and I've uploaded some helpful scripts and configuration profiles compatible with macOS High Sierra and Mojave. You may freely use or modify anything I upload.
 
 ### Resolve an out-of-sync FileVault password with mobile AD user accounts
@@ -28,15 +27,16 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
    * If you're not using Jamf, you can modify the script to pull the password age locally. Find the value in epoch time: `/usr/bin/dscl . -read /Users/$localUser accountPolicyData | /usr/bin/awk -F'<real>|</real>' '{print $2}' | tail -4`
    * If the user decides to reset their password, the Users & Groups pref pane will launch to allow the user to change their password.
    * This script avoids `dscl` to change the password, because that causes isses with secureToken in macOS High Sierra and Mojave
-   * I'm currently testing a revised version with `sysadminctl` that will respect your org's new password complexity policy 
+   * `osascript` simulates a click on the "Change Password..." button to take the user directly to the pw change interface. If your users are on Mojave they will need Jamf to be whitelisted for Accessibility in a [PPPC profile](https://github.com/ducksrfr/mac_admin/blob/master/Privacy%20Preferences%20Policy%20Control%20Profiles/Jamf_accessibility.mobileconfig).
+   * I'm testing a revised version with `sysadminctl` that will respect your org's password complexity policy.
 
 * resetTCC_mic_camera
   * Resets the camera and microphone properties in the TCC database
   * Useful if an end user unintentionally denies access to the camera or microphone in a chat app like Skype, Slack, WebEx, or Lifesize.
 
-* **Updated** create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
+* create_admin_user: updated script with interactive `osascript` prompts to create a new user account with `sysadminctl`
 
-* **Updated** admin_pwreset: Reset a user account password in High Sierra
+* admin_pwreset: Reset a user account password in High Sierra
   * updated script with interactive `osascript` prompts to reset a user password using `sysadminctl`
 
 * outlook_timezone: If a user is unable to resolve time zone mismatch errors in Microsoft Outlook.
