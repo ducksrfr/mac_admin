@@ -1,16 +1,26 @@
 #!/bin/sh
 
-# version 1.1
+# version 1.1.1
 # This script is intended for local user accounts with a password policy not managed by Active Directory, an IdP, or something like NoMAD.
 # If you're using a configration profile to manage the local user password age, the user will never receive proactive password expiration warnings.
 # A user might receive an expiration warning at the login screen, but not in an active user session.
+#
+#
+# Users on Mojave will need to have Jamf whitelisted for Accessibility in a PPPC config profile to allow the simulated click on the "Change Password..." button in System Preferences.
+# Check out my example "Jamf_accessibility.mobileconfig" on my Github.
+#
+#
 # This script pulls the current logged in user's password age from a Jamf extended attribute titled "Password Age"
 # https://github.com/jamf/Current-User-Password-Age
+#
+#
 # The extended attribute gets updated based on your inventory collection frequency.
 # Add this script as a recurring check-in policy that executes once per day.
 # If you don't use Jamf you can incorporate their script into this one to pull the password age value.
 # A user is simply presented with the Change Password dialog in the Users & Groups prefpane. 
 # I don't use dscl to change the password, because that causes issues with secureToken in macOS High Sierra and Mojave.
+#
+#
 
 currentUser=$(scutil <<< "show State:/Users/ConsoleUser" | awk -F': ' '/[[:space:]]+Name[[:space:]]:/ { if ( $2 != "loginwindow" ) { print $2 }}')
 getUID=$(id -u $currentUser)
