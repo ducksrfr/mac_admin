@@ -28,6 +28,7 @@ The scripts folder contains helpful scripts compatible with macOS Mojave and Hig
    * If the user decides to reset their password, the Users & Groups pref pane will launch to allow the user to change their password.
    * This script avoids `dscl` to change the password, because that causes isses with secureToken in macOS High Sierra and Mojave
    * `osascript` simulates a click on the "Change Password..." button to take the user directly to the pw change interface. If your users are on Mojave they will need Jamf to be whitelisted for Accessibility in a [PPPC profile](https://github.com/ducksrfr/mac_admin/blob/master/Privacy%20Preferences%20Policy%20Control%20Profiles/Jamf_accessibility.mobileconfig).
+   * PPPC profile will also need [Jamf whitelisted for AppleEvents to control System Events](https://github.com/rtrouton/privacy_preferences_control_profiles).
    * I'm testing a revised version with `sysadminctl` that will respect your org's password complexity policy.
 
 * resetTCC_mic_camera
