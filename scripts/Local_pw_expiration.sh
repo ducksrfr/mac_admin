@@ -2,11 +2,11 @@
 
 # version 1.1.2
 # This script is intended for local user accounts with a password policy not managed by Active Directory, an IdP, or something like NoMAD.
-# If you're using a configration profile to manage the local user password age, the user will never receive proactive password expiration warnings.
+# If you're using a configuration profile to manage the local user password age, the user will never receive proactive password expiration warnings.
 # A user might receive an expiration warning at the login screen, but not in an active user session.
 #
 #
-# Users on Mojave will need to have Jamf whitelisted for Accessibility in a PPPC config profile to allow the simulated click on the "Change Password..." button in System Preferences.
+# Users on Mojave will need to have Jamf whitelisted for Accessibility in a PPPC config profile to allow the simulated click of the "Change Password..." button in System Preferences.
 # You will also need Jamf whitelisted for AppleEvents to control System Events
 # AppleEvents example: https://github.com/rtrouton/privacy_preferences_control_profiles
 # Accessibility example in my Github: "Jamf_accessibility.mobileconfig"
