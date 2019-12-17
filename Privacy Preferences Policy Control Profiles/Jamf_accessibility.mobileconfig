@@ -1,110 +1,300 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
 <plist version="1.0">
-<dict>
-	<key>PayloadContent</key>
-	<array>
-		<dict>
-			<key>PayloadDescription</key>
-			<string>Jamf_accessibility</string>
-			<key>PayloadDisplayName</key>
-			<string>Jamf_accessibility</string>
-			<key>PayloadIdentifier</key>
-			<string>8A429D9C-D45E-40C1-A63D-2573639643FB</string>
-			<key>PayloadOrganization</key>
-			<string>Your Org Name</string>
-			<key>PayloadType</key>
-			<string>com.apple.TCC.configuration-profile-policy</string>
-			<key>PayloadUUID</key>
-			<string>CD31D941-202D-467B-95EB-AC42424E0154</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>Services</key>
-			<dict>
-				<key>Accessibility</key>
-				<array>
-					<dict>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.jamfsoftware.jamf" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443"</string>
-						<key>Comment</key>
-						<string></string>
-						<key>Identifier</key>
-						<string>/usr/local/jamf/bin/jamf</string>
-						<key>IdentifierType</key>
-						<string>path</string>
-					</dict>
-					<dict>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.jamfsoftware.jamfAgent" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443"</string>
-						<key>Comment</key>
-						<string></string>
-						<key>Identifier</key>
-						<string>/usr/local/jamf/bin/jamfAgent</string>
-						<key>IdentifierType</key>
-						<string>path</string>
-					</dict>
-				</array>
-				<key>AppleEvents</key>
-				<array>
-					<dict>
-						<key>AEReceiverCodeRequirement</key>
-						<string>identifier "com.apple.systempreferences" and anchor apple</string>
-						<key>AEReceiverIdentifier</key>
-						<string>com.apple.systempreferences</string>
-						<key>AEReceiverIdentifierType</key>
-						<string>bundleID</string>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.jamfsoftware.jamf" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443"</string>
-						<key>Comment</key>
-						<string></string>
-						<key>Identifier</key>
-						<string>/usr/local/jamf/bin/jamf</string>
-						<key>IdentifierType</key>
-						<string>path</string>
-					</dict>
-					<dict>
-						<key>AEReceiverCodeRequirement</key>
-						<string>identifier "com.apple.systempreferences" and anchor apple</string>
-						<key>AEReceiverIdentifier</key>
-						<string>com.apple.systempreferences</string>
-						<key>AEReceiverIdentifierType</key>
-						<string>bundleID</string>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.jamfsoftware.jamfAgent" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443"</string>
-						<key>Comment</key>
-						<string></string>
-						<key>Identifier</key>
-						<string>/usr/local/jamf/bin/jamfAgent</string>
-						<key>IdentifierType</key>
-						<string>path</string>
-					</dict>
-				</array>
-			</dict>
-		</dict>
-	</array>
-	<key>PayloadDescription</key>
-	<string>Jamf_accessibility</string>
-	<key>PayloadDisplayName</key>
-	<string>Jamf_accessibility</string>
-	<key>PayloadIdentifier</key>
-	<string>8A429D9C-D45E-40C1-A63D-2573639643FB</string>
-	<key>PayloadOrganization</key>
-	<string>Your Org Name</string>
-	<key>PayloadType</key>
-	<string>com.apple.TCC.configuration-profile-policy</string>
-	<key>PayloadUUID</key>
-	<string>8CD04464-D58C-4157-909F-7CAE8A83E74E</string>
-	<key>PayloadVersion</key>
-	<integer>1</integer>
-	<key>payloadScope</key>
-	<string>system</string>
-</dict>
+    <dict>
+        <key>PayloadUUID</key>
+        <string>013E6B60-329E-49B2-AC33-8212B5CF54A0</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>CompanyName</string>
+        <key>PayloadIdentifier</key>
+        <string>013E6B60-329E-49B2-AC33-8212B5CF54A0</string>
+        <key>PayloadDisplayName</key>
+        <string>PPPC - Jamf</string>
+        <key>PayloadDescription</key>
+        <string>Description Here</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>0816E6B9-CEAA-42D3-BCB4-5A2425ED6CD7</string>
+                <key>PayloadType</key>
+                <string>com.apple.TCC.configuration-profile-policy</string>
+                <key>PayloadOrganization</key>
+                <string>CompanyName</string>
+                <key>PayloadIdentifier</key>
+                <string>0816E6B9-CEAA-42D3-BCB4-5A2425ED6CD7</string>
+                <key>PayloadDisplayName</key>
+                <string>Privacy Preferences Policy Control</string>
+                <key>PayloadDescription</key>
+                <string></string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>Services</key>
+                <dict>
+                    <key>Accessibility</key>
+                    <array>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamf.management.service</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamf.management.service" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                        </dict>
+                    </array>
+                    <key>AppleEvents</key>
+                    <array>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamfAgent</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamfAgent" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.finder</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.finder" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamfAgent</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamfAgent" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemevents</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemevents" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamfAgent</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamfAgent" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemuiserver</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemuiserver" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.finder</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.finder" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemuiserver</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemuiserver" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemevents</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemevents" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.Terminal</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.Terminal" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamf.management.Jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamf.management.Jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.finder</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.finder" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamf.management.Jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamf.management.Jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemuiserver</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemuiserver" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamf.management.Jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamf.management.Jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemevents</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemevents" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamf.management.Jamf</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamf.management.Jamf" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.Terminal</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.Terminal" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamf.management.service</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamf.management.service" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systempreferences</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systempreferences" and anchor apple</string>
+                        </dict>
+                    </array>
+                    <key>SystemPolicyAllFiles</key>
+                    <array>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.jamfsoftware.jamfAgent</string>
+                            <key>CodeRequirement</key>
+                            <string>anchor apple generic and identifier "com.jamfsoftware.jamfAgent" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "483DWKW443")</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+        </array>
+    </dict>
 </plist>
