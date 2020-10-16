@@ -2,12 +2,14 @@
 
 # Determine Carbon Black Extension Type
 
-cbVersion=$( defaults read /Applications/VMware\ Carbon\ Black\ Cloud/VMware\ CBCloud.app/Contents/Info.plist CFBundleVersion )
+# Find the installed Carbon Black Cloud version
+cbVersion=$( defaults read /Applications/VMware\ Carbon\ Black\ Cloud/VMware\ CBCloud.app/Contents/Info.plist CFBundleVersion | cut -c 1-5 )
 
+# Find the Kernel Type status
 extensionStatus=$( /Applications/VMware\ Carbon\ Black\ Cloud/repcli.bundle/Contents/MacOS/repcli status | grep 'Kernel Type:' | awk '{ print $3, $4 }' )
 
-if [[ $cbVersion == "3.5"* ]]; then
+if [[ $cbVersion == 3.5* ]]; then
 	echo "<result>$extensionStatus</result>"
 else
-	echo "<result>Kernel Extension</result>"
+	echo "<result>Version 3.4 or lower</result>"
 fi
