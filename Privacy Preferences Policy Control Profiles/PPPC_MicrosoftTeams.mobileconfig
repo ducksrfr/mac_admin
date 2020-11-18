@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadDescription</key>
+        <string>PPPC_MicrosoftTeams</string>
+        <key>PayloadDisplayName</key>
+        <string>PPPC_MicrosoftTeams</string>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>A10C6A83-CC07-47FC-9FD7-3E2C20BB0BCF</string>
+                <key>PayloadType</key>
+                <string>com.apple.TCC.configuration-profile-policy</string>
+                <key>PayloadOrganization</key>
+                <string>YourCompanyNameHere</string>
+                <key>PayloadIdentifier</key>
+                <string>A10C6A83-CC07-47FC-9FD7-3E2C20BB0BCF</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>Services</key>
+                <dict>
+                    <key>Accessibility</key>
+                    <array>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.microsoft.teams</string>
+                            <key>CodeRequirement</key>
+                            <string>identifier "com.microsoft.teams" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                        </dict>
+                    </array>
+                    <key>AppleEvents</key>
+                    <array>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.microsoft.teams</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>identifier "com.microsoft.teams" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systempreferences</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systempreferences" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.microsoft.teams</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>identifier "com.microsoft.teams" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.finder</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.finder" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.microsoft.teams</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>identifier "com.microsoft.teams" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemuiserver</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemuiserver" and anchor apple</string>
+                        </dict>
+                        <dict>
+                            <key>Identifier</key>
+                            <string>com.microsoft.teams</string>
+                            <key>AEReceiverIdentifierType</key>
+                            <string>bundleID</string>
+                            <key>CodeRequirement</key>
+                            <string>identifier "com.microsoft.teams" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                            <key>IdentifierType</key>
+                            <string>bundleID</string>
+                            <key>StaticCode</key>
+                            <integer>0</integer>
+                            <key>AEReceiverIdentifier</key>
+                            <string>com.apple.systemevents</string>
+                            <key>Allowed</key>
+                            <integer>1</integer>
+                            <key>AEReceiverCodeRequirement</key>
+                            <string>identifier "com.apple.systemevents" and anchor apple</string>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
