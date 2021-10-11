@@ -5,16 +5,46 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
+			<key>DisableFMMiCloudSetting</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>iCloud Find My</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.icloud.managed.1D641291-0D18-4321-8C38-4E905CBB901G</string>
+			<key>PayloadType</key>
+			<string>com.apple.icloud.managed</string>
+			<key>PayloadUUID</key>
+			<string>522369B9-8EB5-41E6-A0FD-E650D656B02H</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>NSDocumentSaveNewDocumentsToCloud</key>
+			<false/>
+			<key>PayloadDisplayName</key>
+			<string>Global Preferences</string>
+			<key>PayloadIdentifier</key>
+			<string>.GlobalPreferences.7C6FCBCA-141C-4AC1-BEF8-D20CBD77BF8G</string>
+			<key>PayloadType</key>
+			<string>.GlobalPreferences</string>
+			<key>PayloadUUID</key>
+			<string>92C8A44C-7D6D-41E8-ACCE-9C42227030G6</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>PayloadDisplayName</key>
 			<string>Restrictions</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.applicationaccess</string>
+			<string>com.apple.applicationaccess.7E50F6AA-A4B3-4F0A-B457-0F3C144968GB</string>
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>C5BF65EF-4695-44BD-AE59-03DF462256D8</string>
+			<string>8A4D9973-05FE-474A-97BA-444A41CA4832</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>allowCloudBTMM</key>
+			<false/>
 			<key>allowCloudBookmarks</key>
 			<false/>
 			<key>allowCloudDesktopAndDocuments</key>
@@ -25,20 +55,30 @@
 			<false/>
 			<key>allowCloudKeychainSync</key>
 			<false/>
+			<key>allowCloudMail</key>
+			<false/>
 			<key>allowCloudPhotoLibrary</key>
+			<false/>
+			<key>allowCloudPrivateRelay</key>
+			<false/>
+			<key>allowFindMyDevice</key>
+			<false/>
+			<key>allowFindMyFriends</key>
 			<false/>
 		</dict>
 	</array>
+	<key>PayloadDescription</key>
+	<string>Disables the following iCloud services: Drive, Desktop and Documents Sync, Photos, Keychain, Bookmarks, Private Relay, Mail, Find My</string>
 	<key>PayloadDisplayName</key>
-	<string>Disable iCloud</string>
+	<string>Disable iCloud Services-Monterey</string>
 	<key>PayloadIdentifier</key>
-	<string>csdisco.D6F08877-2EFF-4F70-8E19-41BD58CC1DC7</string>
+	<string>14FD5DF7-6010-44BB-90E2-20421891E31G</string>
 	<key>PayloadOrganization</key>
-	<string>companyname</string>
+	<string>yourorgname</string>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>3D51462C-375C-4B68-A89B-A2D2BE48FYCG</string>
+	<string>0B97FE4B-AC68-4B0C-8FE3-AFB49CFFAC5C</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
