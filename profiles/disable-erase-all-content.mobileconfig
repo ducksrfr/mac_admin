@@ -1,0 +1,37 @@
+ÿ<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.applicationaccess.4AFF9231-5E51-463D-8D08-0D9858719AD3</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>73FEDC41-55BC-46B6-95F1-80436CFF15G3</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowEraseContentAndSettings</key>
+			<false/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Prevents a user from erasing the user data volume from System Preferences.</string>
+	<key>PayloadDisplayName</key>
+	<string>Disable Erase All Content and Settings</string>
+	<key>PayloadIdentifier</key>
+	<string>2C14B83A-1069-4C4C-931E-0EC4D4107932</string>
+	<key>PayloadOrganization</key>
+	<string>yourorgname</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>68240013-A3C6-40B3-AC48-F7ACE66D4FHR</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
