@@ -27,7 +27,7 @@
 					<key>Identifier</key>
 					<string>com.box.desktop</string>
 					<key>CodeRequirement</key>
-					<string>identifier com.box.desktop; and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = M683GB7CPW</string>
+					<string>identifier com.box.desktop and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = M683GB7CPW</string>
 					<key>IdentifierType</key>
 					<string>bundleID</string>
 					<key>StaticCode</key>
@@ -39,7 +39,7 @@
 					<key>Identifier</key>
 					<string>com.Box.Box-Edit</string>
 					<key>CodeRequirement</key>
-					<string>identifier com.Box.Box-Edit; and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = M683GB7CPW</string>
+					<string>identifier com.Box.Box-Edit and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = M683GB7CPW</string>
 					<key>IdentifierType</key>
 					<string>bundleID</string>
 					<key>StaticCode</key>
