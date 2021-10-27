@@ -1,93 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<dict>
-		<key>PayloadUUID</key>
-		<string>7AAFD54C-BE39-4E5C-BF61-09F49BD31133</string>
-		<key>PayloadType</key>
-		<string>com.apple.TCC.configuration-profile-policy</string>
-		<key>PayloadOrganization</key>
-		<string>Your Org</string>
-		<key>PayloadIdentifier</key>
-		<string>7AAFD54C-BE39-4E5C-BF61-09F49BD31234</string>
-		<key>PayloadDisplayName</key>
-		<string>Privacy Preferences Policy Control</string>
-		<key>PayloadDescription</key>
-		<string></string>
-		<key>PayloadVersion</key>
-		<integer>1</integer>
-		<key>PayloadEnabled</key>
-		<true/>
-		<key>Services</key>
+<dict>
+	<key>PayloadUUID</key>
+	<string>4CCE66D5-4FE6-425A-AD9E-12B4B871A61B</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadOrganization</key>
+	<string>Your Org</string>
+	<key>PayloadIdentifier</key>
+	<string>4CCE66D5-4FE6-425A-AD9E-12B4B871A61B</string>
+	<key>PayloadDisplayName</key>
+	<string>PPPC - Google Drive</string>
+	<key>PayloadDescription</key>
+	<string>Allows users to upload to (or copy files from) Google Drive directly from Finder in macOS.</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
 		<dict>
-			<key>SystemPolicyNetworkVolumes</key>
-			<array>
-				<dict>
-					<key>Identifier</key>
-					<string>com.google.drivefs.finderhelper</string>
-					<key>CodeRequirement</key>
-					<string>identifier com.google.drivefs.finderhelper and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
-					<key>IdentifierType</key>
-					<string>bundleID</string>
-					<key>StaticCode</key>
-					<integer>0</integer>
-					<key>Allowed</key>
-					<integer>1</integer>
-				</dict>
-			</array>
-			<key>Accessibility</key>
-			<array>
-				<dict>
-					<key>Identifier</key>
-					<string>com.google.drivefs</string>
-					<key>CodeRequirement</key>
-					<string>identifier com.google.drivefs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
-					<key>IdentifierType</key>
-					<string>bundleID</string>
-					<key>StaticCode</key>
-					<integer>0</integer>
-					<key>Allowed</key>
-					<integer>1</integer>
-				</dict>
-			</array>
-			<key>AppleEvents</key>
-			<array>
-				<dict>
-					<key>Identifier</key>
-					<string>com.google.drivefs</string>
-					<key>AEReceiverIdentifierType</key>
-					<string>bundleID</string>
-					<key>CodeRequirement</key>
-					<string>identifier com.google.drivefs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
-					<key>IdentifierType</key>
-					<string>bundleID</string>
-					<key>StaticCode</key>
-					<integer>0</integer>
-					<key>AEReceiverIdentifier</key>
-					<string>com.apple.systempreferences</string>
-					<key>Allowed</key>
-					<integer>1</integer>
-					<key>AEReceiverCodeRequirement</key>
-					<string>identifier com.apple.systempreferences and anchor apple</string>
-				</dict>
-			</array>
-			<key>SystemPolicyAllFiles</key>
-			<array>
-				<dict>
-					<key>Identifier</key>
-					<string>com.google.drivefs</string>
-					<key>CodeRequirement</key>
-					<string>identifier com.google.drivefs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
-					<key>IdentifierType</key>
-					<string>bundleID</string>
-					<key>StaticCode</key>
-					<integer>0</integer>
-					<key>Allowed</key>
-					<integer>1</integer>
-				</dict>
-			</array>
+			<key>PayloadUUID</key>
+			<string>7AAFD54C-BE39-4E5C-BF61-09F49BD31133</string>
+			<key>PayloadType</key>
+			<string>com.apple.TCC.configuration-profile-policy</string>
+			<key>PayloadOrganization</key>
+			<string>CS Disco</string>
+			<key>PayloadIdentifier</key>
+			<string>7AAFD54C-BE39-4E5C-BF61-09F49BD31133</string>
+			<key>PayloadDisplayName</key>
+			<string>Privacy Preferences Policy Control</string>
+			<key>PayloadDescription</key>
+			<string></string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>Services</key>
+			<dict>
+				<key>SystemPolicyNetworkVolumes</key>
+				<array>
+					<dict>
+						<key>Identifier</key>
+						<string>com.google.drivefs.finderhelper</string>
+						<key>CodeRequirement</key>
+						<string>identifier com.google.drivefs.finderhelper and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+						<key>StaticCode</key>
+						<integer>0</integer>
+						<key>Allowed</key>
+						<integer>1</integer>
+					</dict>
+				</array>
+				<key>Accessibility</key>
+				<array>
+					<dict>
+						<key>Identifier</key>
+						<string>com.google.drivefs</string>
+						<key>CodeRequirement</key>
+						<string>identifier com.google.drivefs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+						<key>StaticCode</key>
+						<integer>0</integer>
+						<key>Allowed</key>
+						<integer>1</integer>
+					</dict>
+				</array>
+				<key>AppleEvents</key>
+				<array>
+					<dict>
+						<key>Identifier</key>
+						<string>com.google.drivefs</string>
+						<key>AEReceiverIdentifierType</key>
+						<string>bundleID</string>
+						<key>CodeRequirement</key>
+						<string>identifier com.google.drivefs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+						<key>StaticCode</key>
+						<integer>0</integer>
+						<key>AEReceiverIdentifier</key>
+						<string>com.apple.systempreferences</string>
+						<key>Allowed</key>
+						<integer>1</integer>
+						<key>AEReceiverCodeRequirement</key>
+						<string>identifier com.apple.systempreferences and anchor apple</string>
+					</dict>
+				</array>
+				<key>SystemPolicyAllFiles</key>
+				<array>
+					<dict>
+						<key>Identifier</key>
+						<string>com.google.drivefs</string>
+						<key>CodeRequirement</key>
+						<string>identifier com.google.drivefs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+						<key>StaticCode</key>
+						<integer>0</integer>
+						<key>Allowed</key>
+						<integer>1</integer>
+					</dict>
+				</array>
+			</dict>
 		</dict>
-	</dict>
-</array>
+	</array>
+</dict>
 </plist>
