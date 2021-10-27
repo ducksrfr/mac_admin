@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>PayloadUUID</key>
+		<string>24B67FE6-D1B1-4D78-8A9D-45525BA5D7G7</string>
+		<key>PayloadType</key>
+		<string>com.apple.TCC.configuration-profile-policy</string>
+		<key>PayloadOrganization</key>
+		<string>Your Org</string>
+		<key>PayloadIdentifier</key>
+		<string>24B67FE6-D1B1-4D78-8A9D-45525BA5D7G7</string>
+		<key>PayloadDisplayName</key>
+		<string>Privacy Preferences Policy Control</string>
+		<key>PayloadDescription</key>
+		<string></string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>Services</key>
+		<dict>
+			<key>SystemPolicyDownloadsFolder</key>
+			<array>
+				<dict>
+					<key>Identifier</key>
+					<string>com.tinyspeck.slackmacgap</string>
+					<key>CodeRequirement</key>
+					<string>identifier com.tinyspeck.slackmacgap and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = BQR82RBBHL</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>StaticCode</key>
+					<integer>0</integer>
+					<key>Allowed</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</array>
+</plist>
