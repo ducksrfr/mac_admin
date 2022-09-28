@@ -22,6 +22,13 @@ Child flows typically begin with a Helper Flow card to reference the parent flow
 
 Action cards may require a Workflows Connection to authenticate with the Okta or Jamf APIs. Your Workflows environment may prompt you to associate Connections that you have previously configured in your org with these templates.
 
+## Parsing the Okta Syslog
+
+This collection of flows contains a parent and multiple child flows to parse extraneous data from the Okta syslog. This is helpful when other teams ask for reports on a regular basis.
+
+The Google API does not allow you to dynamically generate new sheet or worksheet IDs, which makes report generation diffcult. The multiple child flows in this collection will import the Okta syslog data into a Workflows table where it is parsed before sending out to a Google Sheet.
+
+
 ## Available Flows
 
 * Remove Computers from a Static Group
@@ -29,3 +36,4 @@ Action cards may require a Workflows Connection to authenticate with the Okta or
 * Reinstall the Jamf Framework
 * Unlock Local Mac User Account on Okta Password Reset
 * Lock Devices On Okta User Deactivation
+* Parse Okta Syslog
