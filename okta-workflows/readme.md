@@ -12,6 +12,9 @@ Parent flows begin with an event trigger. Some flows may have a suggested event 
 
 Child flows typically begin with a Helper Flow card to reference the parent flow on-demand. `reinstallJamfFrameworkParentFlow.flow` begins with a Scheduled Flow so that the automation runs on a regular basis vs on-demand.
 
+## Connections
+
+Action cards may require a Workflows Connection to authenticate with the Okta or Jamf APIs. Your Workflows environment may prompt you to associate Connections that you have previously configured in your org with these templates.
 
 ## Available Automation Templates
 
