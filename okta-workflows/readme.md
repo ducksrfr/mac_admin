@@ -1,6 +1,6 @@
 ### Okta Workflows Templates
 
-You are able to download the `.flow` template files and upload them to your sandbox or production instance of Okta Workflows.
+You are able to download the `.flow` template files and upload them to your sandbox or production instance of Okta Workflows. The example flows use the Okta, Jamf Pro, and Jamf Classic APIs.
 
 Most automations are in a parent/child flow pair. I suggest uploading all parent flows first. The Okta Workflows import tool may prompt you to select a parent flow to associate with each child flow as they are imported.
 
@@ -14,7 +14,9 @@ For example: `removeFromStaticGroupParent.flow` needs the user's email address t
 
 ## Child Flows
 
-Child flows typically begin with a Helper Flow card to reference the parent flow on-demand. `reinstallJamfFrameworkParentFlow.flow` begins with a Scheduled Flow so that the automation runs on a regular basis vs on-demand.
+Child flows typically begin with a Helper Flow card to reference the parent flow on-demand. 
+
+`reinstallJamfFrameworkParentFlow.flow` begins with a Scheduled Flow so that the automation runs on a regular basis vs on-demand.
 
 ## Connections
 
