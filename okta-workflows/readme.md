@@ -6,7 +6,9 @@ Most automations are in a parent/child flow pair. I suggest uploading all parent
 
 ## Parent Flows
 
-Parent flows begin with an event trigger. Some flows may have a suggested event like User Activation. Others may have a placeholder Helper Flow with a hint as to the information needed to complete the flow. For example: `removeFromStaticGroupParent.flow` needs the user's email address to process the remainder of both the parent and child flows. Common choices might be Okta User Activation or Okta User Deactivation.
+Parent flows begin with an event trigger. Some flows may have a suggested event like User Activation. Others may have a placeholder Helper Flow with a hint as to the information needed to complete the flow. 
+
+For example: `removeFromStaticGroupParent.flow` needs the user's email address to process the remainder of both the parent and child flows. Common choices might be Okta User Activation or Okta User Deactivation.
 
 ## Child Flows
 
@@ -16,7 +18,7 @@ Child flows typically begin with a Helper Flow card to reference the parent flow
 
 Action cards may require a Workflows Connection to authenticate with the Okta or Jamf APIs. Your Workflows environment may prompt you to associate Connections that you have previously configured in your org with these templates.
 
-## Available Automation Templates
+## Available Flows
 
 * Remove Computers from a Static Group
 * Add Computers to a Static Group
