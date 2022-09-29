@@ -24,9 +24,9 @@ Action cards may require a Workflows Connection to authenticate with the Okta or
 
 ## Parsing the Okta Syslog
 
-This collection of flows contains a parent and multiple child flows to parse extraneous data from the Okta syslog. This is helpful when other teams ask for reports on a regular basis.
+This collection of flows contains a parent and multiple child flows to parse extraneous data from the Okta syslog. This is helpful when other stakeholders and teams ask for reports on a regular basis.
 
-The Google API does not allow you to dynamically generate new sheet or worksheet IDs, which makes report generation diffcult. The multiple child flows in this collection will import the Okta syslog data into a Workflows table where it is parsed before sending out to a Google Sheet.
+The Google API does not allow you to dynamically generate new sheet or worksheet IDs, which makes generating reports in Google Sheets cumbersome. The multiple child flows in this collection will import the Okta syslog data into a Workflows table where it is parsed before sending to Google Sheets.
 
 
 ## Available Flows
