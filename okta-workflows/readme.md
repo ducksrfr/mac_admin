@@ -1,6 +1,6 @@
 ### Okta Workflows Templates
 
-You are able to download the `.flow` template files and upload them to your sandbox or production instance of Okta Workflows. The example flows use the Okta, Jamf Pro, and Jamf Classic APIs.
+You are able to download the `.flow` template files and upload them to your sandbox or production instance of Okta Workflows. The example flows include use of the Okta, Google, Jamf Pro, and Jamf Classic APIs.
 
 Most automations are in a parent/child flow pair. I suggest uploading all child flows first. The Okta Workflows import tool may prompt you to select a parent flow to associate with each child flow as they are imported.
 
