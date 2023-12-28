@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>IdPSettings</key>
+			<dict>
+				<key>DiscoveryURL</key>
+				<string>https://[Okta tenant name].okta.com/.well-known/openid-configuration</string>
+				<key>OIDCClientID</key>
+				<string>[Client ID from Jamf Connect OIDC app in Okta]</string>
+				<key>Provider</key>
+				<string>OktaIdentityEngine</string>
+				<key>TenantID</key>
+				<string>[Okta tenant name].okta.com</string>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Minimum config for Okta Identity Engine OIDC app users</string>
+			<key>PayloadDisplayName</key>
+			<string>Jamf Connect-OktaIdentityEngine-OIDC</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>581122AB-DB2E-405C-B0D9-DFBF0D1ED309</string>
+			<key>PayloadOrganization</key>
+			<string>Your Org Name</string>
+			<key>PayloadType</key>
+			<string>com.jamf.connect</string>
+			<key>PayloadUUID</key>
+			<string>8FA5F6C1-A960-49CA-AD2E-060E95CE0800</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Minimum config for Okta Identity Engine OIDC app users</string>
+	<key>PayloadDisplayName</key>
+	<string>Jamf Connect-OktaIdentityEngine-OIDC</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>581122AB-DB2E-405C-B0D9-DFBF0D1ED309</string>
+	<key>PayloadOrganization</key>
+	<string>Your Org Name</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>37B7BBFF-EB9B-4F04-804C-9ECD3B18C511</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
